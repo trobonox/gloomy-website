@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gloomy Discord Server</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <img src="server-icon.png" alt="icon"/>
+            <h1>gloomy</h1>  
+            <p>We are a chill discord server where you can hang out, talk to people and play games. <br class="hidden">Special things we offer are custom bots: with fun Anime features or a chatbot you can talk to!</p>  
+            
+            <!-- links -->
+            <a href="https://discord.gg/YSWK8Nu" class="links">Join Server</a>
+            <a href="rules.html" class="links">Server Rules</a>
+            <a href="https://disboard.org/de/server/680785053202251797" class="links">Leave a review on Disboard!</a>
+        </div>
+    </div>
+
+    <div class="bg-container no-overflow">
+        <div class="background blur-overlay no-overflow"></div>
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap');
+    
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        background-color: #292929;
+    }
+
+    h1 {
+        font-style: italic;
+        margin: 10px 0;
+    }
+
+    img {
+        border-radius: 50%;
+        margin-top: 100px;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .background{
+        width: 100%;
+        height: 100%;
+
+        background-image: url('anime_background.gif');
+        background-color: #292929;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    
+
+    .blur-overlay{
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        transform: scale(1.1);
+    }
+
+    .content{
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .bg-container{
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .links {
+        text-align: center;
+        margin-top: 25px;
+        padding: 15px;
+        width: 290px;
+        border-radius: 10px;   
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        transition: color 0.2s;
+        background-color: white;
+    }
+
+    a:hover {
+        color: black;
+        background-color: #d6d6d6;
+    }
+
+    a:first-of-type{
+        background-color: #435597;
+        color: white;
+    }
+
+    a:first-of-type:hover{
+        color: white;
+        background-color: #35447a;
+    }
+
+    /* Media queries for responsiveness of description paragraph, everything else looks good enough with default flexbox */
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        .hidden {
+            display: none;
+        }
+
+        img {
+            margin-top: 50px;
+        }
+
+        p{
+            padding: 0 10px;
+        }
+    } 
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        .hidden {
+            display: none;
+        }
+
+        img {
+            margin-top: 75px;
+        }
+
+        p{
+            padding: 0 10px;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .hidden {
+            display: none;
+        }
+
+        p{
+            padding: 0 15px;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .hidden {
+            display: inline;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .hidden {
+            display: inline;
+        }
+    }
+
+    /* Enable overflow hiding for devices that do not need to scroll on the page -- height heigher than 650px */
+    @media only screen and (min-height: 650px) {
+        .no-overflow{
+            overflow: hidden;
+        }
+    }
+
+</style>

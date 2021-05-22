@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="rules-wrapper">
+        <h1>Rules</h1>
+        <p>
+            no toxicity / harassment / bullying <br>
+            no racism / sexism / homophobia, etc <br>
+            no dm adv / spam / NSFW / gore <br>
+            no doxing / ddosing / exposing private info <br>
+            follow discord ToS & guidelines <br>
+            <br>
+            please don't say any slurs! (this includes videos, gifs etc.) <br class="hidden">
+            even if you're "allowed" to say them. don't even try to argue about it. thank you! <br> <br>
+            1 slur = warning <br>
+            2 slurs = kick <br>
+            3+ slurs = ban <br>
+        </p>
+        <a href="index.html">Back</a>
+    </div> 
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,700&display=swap');
+    
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        background-color: #292929;
+    }
+
+    h1 {
+        font-style: italic;
+        margin: 10px 0;
+        padding-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(130, 149, 214);
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    a:hover{
+        text-decoration: rgb(95, 110, 160);
+        color: rgb(95, 110, 160);
+    }
+
+
+    .rules-wrapper{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        p{
+            padding: 0 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    } 
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        p{
+            padding: 0 10px;
+        }
+
+        .hidden {
+            display: none;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        p{
+            padding: 0 15px;
+        }
+
+        .hidden {
+            display: inline;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        p{
+            padding: 0 100px;
+        }
+
+        .hidden {
+            display: inline;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) { 
+        p {
+            padding: 0 250px
+        }
+
+        .hidden {
+            display: inline;
+        }
+    }
+</style>
